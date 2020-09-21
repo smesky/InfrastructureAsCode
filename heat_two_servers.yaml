@@ -1,0 +1,18 @@
+parameters:
+	key_name: mykey
+	name_lin: ubunser
+	image_lin: Ubuntu Server 18.04 LTS (Bionic Beaver) amd64
+	flavor_lin: m1.small
+	name_win: winser
+	image_win: Windows Server 2019 Standard [Unlicensed]
+	flavor_win: m1.medium
+	public_net: ntnu-internal
+	private_net_name: nett1
+	private_net_cidr: 192.168.131.0/24
+	private_net_gateway: 192.168.131.1
+	private_net_pool_start: 192.168.131.200
+	private_net_pool_end: 192.168.131.250
+	sec_group_lin:
+		- default
+		- linux
+	sec_group_win: default, windows
