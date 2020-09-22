@@ -63,7 +63,7 @@ resources:
   private_subnet:
     type: OS::Neutron::Subnet
     properties:
-      network_id: { get-resource: private_net }
+      network_id: { get_resource: private_net }
       cidr: { get_param: private_net_cidr }
       gateway_ip: { get_param: private_net_gateway }
       allocation_pools:
@@ -90,7 +90,7 @@ resources:
       flavor: { get_param: flavor_lin }
       key_name: { get_param: key_name }
       networks:
-        - port: { get_resources: server1_port }
+        - port: { get_resource: server1_port }
 
   server1_port:
     type: OS::Neutron::Port

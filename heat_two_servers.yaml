@@ -15,4 +15,4 @@ parameters:
   sec_group_lin:
     - default
     - linux
-  sec_group_win: default, windows
+  sec_group_win: default,windows
